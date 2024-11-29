@@ -278,6 +278,10 @@ prepare() {
         patch -Np1 < "../$src"
     done
 
+    if [ -n "$_nicelocal_march" ]; then
+        sed -i "s|$_nicelocal_march|$_nicelocal_flags|g" arch/x86/Makefile
+    fi
+
     echo "Setting config..."
     cp ../config .config
 
