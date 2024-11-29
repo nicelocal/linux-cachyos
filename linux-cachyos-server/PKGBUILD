@@ -188,7 +188,7 @@ makedepends=(
   zstd
 )
 
-_patchsource="https://raw.githubusercontent.com/cachyos/kernel-patches/master/${_major}"
+_patchsource="https://raw.githubusercontent.com/nicelocal/kernel-patches/master/${_major}"
 _nv_ver=565.57.01
 _nv_pkg="NVIDIA-Linux-x86_64-${_nv_ver}"
 _nv_open_pkg="open-gpu-kernel-modules-${_nv_ver}"
